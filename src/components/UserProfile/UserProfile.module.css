@@ -1,0 +1,41 @@
+.wrapper {
+  width: 300px;
+  height: 140px;
+  border-right: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.image {
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: -10px;
+}
+
+.label .input {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  padding: 10px;
+  font-family: inherit;
+  color: #aaa;
+}
