@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  border-bottom: 1px solid lightblue;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.image {
+  margin: 15px 0 15px 15px;
+  border-radius: 50%;
+  border: 1px solid lightblue;
+}
+
+.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: -10px;
+}
+
+.title {
+  font-weight: normal;
+  margin-left: 15px;
+  color: rgb(34, 31, 31);
+}

@@ -1,6 +1,5 @@
 .wrapper {
   height: 405px;
-  border-right: 1px solid lightblue;
   width: 300px;
   background-color: rgb(244, 244, 244);
   overflow: scroll;

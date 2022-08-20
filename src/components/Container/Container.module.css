@@ -3,5 +3,5 @@
   width: 1200px;
   height: 600px;
   background-color: #eee;
-  border: 1px solid black;
+  display: flex;
 }

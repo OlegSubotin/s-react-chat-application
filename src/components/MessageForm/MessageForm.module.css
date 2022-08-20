@@ -1,0 +1,33 @@
+.wrapper {
+  border-top: 1px solid lightblue;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.label .input {
+  width: 350px;
+  outline: none;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  padding: 10px 60px 10px 20px;
+  font-family: inherit;
+  color: #aaa;
+  position: relative;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  color: #aaa;
+  position: sticky;
+  margin-left: -60px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #1a1a1a;
+  text-shadow: rgb(6, 6, 6) 1px 0 10px;
+}
