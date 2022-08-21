@@ -2,6 +2,9 @@ import moment from 'moment';
 import s from './ChatsList.module.css';
 
 const findMessageWithLastTime = arr => {
+  if (arr?.length === 0) {
+    return;
+  }
   let latestMessage = Math.max(...arr.map(el => el.time));
   for (const el of arr) {
     if (Number(el.time) === latestMessage) {
@@ -14,12 +17,12 @@ const convertMsToData = num => {
   return moment(num).format('LL');
 };
 
-const ChatsList = ({ chats }) => {
+const ChatsList = ({ chats, onClick }) => {
   return (
     <div className={s.wrapper}>
       <ul className={s.list}>
         {chats.map(({ id, name, image, online, chat }) => (
-          <li className={s.item} key={id}>
+          <li className={s.item} key={id} id={id} onClick={onClick}>
             <div className={s.contactWrapper}>
               <div className={s.avatarWrapper}>
                 <img
@@ -34,12 +37,16 @@ const ChatsList = ({ chats }) => {
               <div className={s.contactDescription}>
                 <span className={s.name}>{name}</span>
                 <span className={s.message}>
-                  {findMessageWithLastTime(chat).message}
+                  {findMessageWithLastTime(chat)?.message}
                 </span>
               </div>
             </div>
             <span className={s.date}>
-              {convertMsToData(Number(findMessageWithLastTime(chat).time))}
+              {chat.length > 0 ? (
+                convertMsToData(Number(findMessageWithLastTime(chat)?.time))
+              ) : (
+                <></>
+              )}
             </span>
           </li>
         ))}

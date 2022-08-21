@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   border-bottom: 1px solid lightblue;
+  height: 73px;
 }
 
 .imageContainer {
@@ -19,6 +20,14 @@
   height: 10px;
   border-radius: 50%;
   background-color: green;
+  margin-left: -10px;
+}
+
+.offline {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
   margin-left: -10px;
 }
 

@@ -6,12 +6,20 @@
         "image":"https://cdn-icons-png.flaticon.com/512/616/616438.png",
         "chat":[
             {
-                "message": "message1",
-                "time": "1661004843549"
+                "message": "hi",
+                "time": "1661124843549"
             },
             {
-                "message": "messahbdfsdnasdfsgbndsmfngffmdfbnge2",
-                "time": "1661006833185"
+                "message": "whats up",
+                "time": "1651006833185"
+            },
+            {
+                "message": "er up",
+                "time": "1551006833185"
+            },
+            {
+                "message": "ty up",
+                "time": "1751006833185"
             }
         ]        
     },
